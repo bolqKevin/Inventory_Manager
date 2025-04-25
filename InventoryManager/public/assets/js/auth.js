@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (!email || !password) {
                 e.preventDefault();
-                alert('Please fill in all fields');
+                alert('Por favor, rellene todos los campos');
                 return;
             }
             
             if (!isValidEmail(email)) {
                 e.preventDefault();
-                alert('Please enter a valid email address');
+                alert('Por favor, introduce una dirección de correo electrónico válida');
                 return;
             }
         });

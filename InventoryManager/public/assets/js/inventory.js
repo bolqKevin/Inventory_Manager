@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (!name || isNaN(quantity) || quantity < 1) {
                 e.preventDefault();
-                alert('Please fill in all required fields correctly');
+                alert('Por favor, rellene correctamente todos los campos obligatorios');
                 return;
             }
         });
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function handleDelete(id) {
-    if (confirm('Are you sure you want to delete this item?')) {
+    if (confirm('¿Estás seguro de que quieres eliminar este artículo?')) {
         fetch(`/inventory/delete/${id}`, {
             method: 'POST',
             headers: {

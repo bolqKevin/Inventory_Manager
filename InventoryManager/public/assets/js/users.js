@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (!username || !email || !role) {
                 e.preventDefault();
-                alert('Please fill in all required fields correctly');
+                alert('Por favor, rellene correctamente todos los campos obligatorios');
                 return;
             }
         });
